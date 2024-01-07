@@ -7,8 +7,13 @@ public class UniqueChars {
         public static String uniqueChars(String s) {
             String x = "";
             for (int i = 0; i < s.length(); i++) {
-                if (x.indexOf(s.charAt(i)) == -1){
-                    x = x + s.charAt(i);
+                char y = s.charAt(i);
+                if (y == ' '){
+                    x = x + " ";
+                    i++;
+                }
+                if (x.indexOf(y) == -1){
+                    x = x + y;
                 }
             }
             return x;
