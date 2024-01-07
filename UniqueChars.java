@@ -10,7 +10,6 @@ public class UniqueChars {
                 char y = s.charAt(i);
                 if (y == ' '){
                     x = x + " ";
-                    i++;
                 }
                 if (x.indexOf(y) == -1){
                     x = x + y;
